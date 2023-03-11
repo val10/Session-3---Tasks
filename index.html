@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        JS Practice</title>
+</head>
+
+<body>
+
+    <h1>Tasks JS</h1>
+    <!-- <ol>
+        <li>Assignment (Mathematical Shapes)</li>
+        <ul>
+            <li>Write a JavaScript program to find the diagonal of a square where the length of each side is 9</li>
+            <li>Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6 and 7</li>
+            <li>Write a JavaScript program to find the circumference and surface area of a circle whose radius is 4
+                <ul>
+                    <li>When trying to find these values, you will need to use PI. Remember constants?</li>
+                </ul>
+            </li>
+        </ul>
+        <li>Assignment (Conditional Statements & Loops):</li>
+        <ul>
+            <li>Write a JavaScript program that accepts two integers and displays the larger of the two.</li>
+            <li>Write a JavaScript program that checks whether an integer is an even or an odd number.</li>
+        </ul>
+    </ol> -->
+
+    <h2>Diagonal of a square</h2>
+    <form onsubmit="findDiagonal(event)">
+        <label for="sideLength">Enter the side length of the square:</label>
+        <input type="number" id="sideLength" name="sideLength" required>
+        <button type="submit">Calculate diagonal</button>
+    </form>
+    <div id="diagonalResult"></div>
+    <br><br>
+    <h2>Area of a triangle</h2>
+    <div id="triangleArea"></div>
+    <br><br>
+    <h2>Circle</h2>
+    <div id="circumference"></div>
+    <br>
+    <div id="surfaceArea"></div>
+    <br><br>
+    <h2>Write a JavaScript program that accepts two integers and displays the larger of the two.</h2>
+    <form onsubmit="findBiggerNumber(event)">
+        <label for="num1">Enter number 1</label>
+        <input type="number" id="num1" name="num1" required>
+        <label for="num2">Enter number 2</label>
+        <input type="number" id="num2" name="num2" required>
+        <button type="submit">Show Bigger Number</button>
+    </form>
+    <div id="biggernumber"></div>
+    <br><br>
+    <h2>Odd || Even number </h2>
+    <form onsubmit="typeNumber(event)">
+        <label for="number">Enter a number</label>
+        <input type="number" id="number" name="number" min="1" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="typeNumber"></div>
+
+
+
+    <script src="mathShapes.js"></script>
+    <script src="triangleArea.js"></script>
+    <script src="circle.js"></script>
+    <script src="biggerNumber.js"></script>
+    <script src="oddOrEven.js"></script>
+</body>
+
+</html>
